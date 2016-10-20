@@ -1,6 +1,6 @@
 {
-  "name": "shopify-liquid",
-  "version": "1.2.5",
+  "name": "nakedcreativity-liquid",
+  "version": "1.2.6",
   "description": "Liquid template engine for JavaScript, Node.js and Browser",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/harttle/shopify-liquid.git"
+    "url": "git+https://github.com/nakedcreativity/shopify-liquid.git"
   },
   "keywords": [
     "liquid",
@@ -18,14 +18,15 @@
     "jinja",
     "shopify"
   ],
-  "author": "Harttle",
+  "author": "Naked Creativity",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/harttle/shopify-liquid/issues"
+    "url": "https://github.com/nakedcreativity/shopify-liquid/issues"
   },
-  "homepage": "https://github.com/harttle/shopify-liquid#readme",
+  "homepage": "https://github.com/nakedcreativity/shopify-liquid#readme",
   "dependencies": {
-    "any-promise": "^1.3.0"
+    "any-promise": "^1.3.0",
+    "moment": "^2.15.1"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.14.0",

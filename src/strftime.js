@@ -380,7 +380,7 @@ var strftime = function(d, format) {
     // Because that's a large amount of code for this one specific use case,
     // I've just decided to loop through a regex instead.
     d = moment(d).toDate()
-    
+
     var output = '';
     var remaining = format;
 

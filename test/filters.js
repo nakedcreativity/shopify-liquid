@@ -7,6 +7,7 @@ chai.use(chaiAsPromised);
 function test(src, dst) {
     ctx = {
         date: new Date(),
+        dateStr: "2016-10-19T07:22.000Z",
         foo: 'bar',
         arr: [-2, 'a'],
         obj: {
@@ -39,6 +40,10 @@ describe('filters', function() {
     it('should support date: %a %b %d %Y', function() {
         var str = ctx.date.toDateString();
         return test('{{ date | date:"%a %b %d %Y"}}', str);
+    });
+    it('should support date from string: %a %b %d %Y', function() {
+        var str = "Wed Oct 19 2016";
+        return test('{{ dateStr | date:"%a %b %d %Y"}}', str);
     });
 
     it('should support default', () => test('{{false |default: "a"}}', 'a'));

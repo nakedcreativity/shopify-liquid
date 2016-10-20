@@ -14,7 +14,8 @@ describe('expression', function() {
             one: 1,
             two: 2,
             x: 'XXX',
-			z: 'z'
+			z: 'z',
+            'hypenated-handle': true
         });
     });
 
@@ -54,4 +55,9 @@ describe('expression', function() {
         expect(evalExp('(2..4)', scope)).to.deep.equal([2,3,4]);
         expect(evalExp('(two..4)', scope)).to.deep.equal([2,3,4]);
     });
+
+    it('should eval handles with dashes', function() {
+        expect(evalValue('hypenated-handle', scope)).to.equal(true);
+    });
+
 });
