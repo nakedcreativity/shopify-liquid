@@ -1,3 +1,5 @@
+var moment = require('moment')
+
 var monthNames = [
     "January", "February", "March", "April", "May", "June", "July", "August",
     "September", "October", "November", "December"
@@ -377,7 +379,8 @@ var strftime = function(d, format) {
     // http://blog.stevenlevithan.com/archives/cross-browser-split
     // Because that's a large amount of code for this one specific use case,
     // I've just decided to loop through a regex instead.
-
+    d = moment(d).toDate()
+    
     var output = '';
     var remaining = format;
 
